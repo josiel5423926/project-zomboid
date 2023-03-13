@@ -3,11 +3,14 @@ import { Route, Routes } from "react-router-dom";
 import { GlobalStyle } from "./styles/global";
 import { defaultTheme } from "./styles/themes/default";
 import { Home } from "../src/page";
-import AboutMe from "./page/aboutMe";
-import ContactMe from "./page/contactMe";
-import Portfolio from "./page/portfolio";
+
 import { Nav } from "./components/Header";
-import { Footer } from "./components/Footer";
+import React from "react";
+import WitheList from "./page/witheList";
+import Register from "./page/register";
+import GamePlay from "./page/gamePlay";
+import BuyAccess from "./page/buyAccess";
+
 
 export function App() {
   return (
@@ -18,11 +21,12 @@ export function App() {
 
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/about" element={<AboutMe />} />
-        <Route path="/contactme" element={<ContactMe />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/witheList" element={<WitheList/>} />
+        <Route path="/register" element={<Register />} />
+        <Route path="gameplay" element={<GamePlay />} />
+        <Route path="buyAcces" element={<BuyAccess />} />
       </Routes>
-      <Footer />
+ 
     </ThemeProvider>
   );
 }

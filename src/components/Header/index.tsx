@@ -15,7 +15,7 @@ export const Nav = () => {
     <S.ContainerNav>
       <S.Title>
         <Link to={"/"}>
-          <h2>Josiel Souza</h2>
+          <img src="../../../public/logo.png" alt="LOGO" />
         </Link>
       </S.Title>
 

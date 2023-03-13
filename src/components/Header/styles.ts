@@ -7,7 +7,7 @@ export const ContainerNav = styled.div`
   box-sizing: border-box;
   width: 100%;
   height: auto;
-  background-color: ${(props) => props.theme["gray-800"]};
+  background-color: transparent;
   color: ${(props) => props.theme["gray-100"]};
   margin: 0;
   padding: 0;
@@ -41,6 +41,9 @@ export const Title = styled.div`
     a {
       text-decoration: none;
       color: ${(props) => props.theme["gray-100"]};
+      img{
+        width: 50%;
+      }
     }
   }
 `;

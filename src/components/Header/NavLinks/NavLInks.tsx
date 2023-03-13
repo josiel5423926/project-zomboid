@@ -1,6 +1,6 @@
 import React from "react";
 import * as S from "./styles";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 interface NavLinksProps {
   onClose: () => void;
@@ -9,38 +9,18 @@ interface NavLinksProps {
 const NavLinks = ({ onClose }: NavLinksProps) => {
   return (
     <S.ContainerLinks>
-      <Link
-        activeClass="active"
-        to="about"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        onClick={onClose}
-      >
-        <li>Sobre</li>
+      <Link to={"/"} onClick={onClose}>
+        <li>HOME</li>
       </Link>
-      <Link
-        activeClass="active"
-        to="portfolio"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        onClick={onClose}
-      >
-        <li>Projetos</li>
+      <Link to={"/witheList"} onClick={onClose}>
+        <li>WITHELIST</li>
       </Link>
-      <Link
-        activeClass="active"
-        to="contactMe"
-        spy={true}
-        smooth={true}
-        offset={-70}
-        duration={500}
-        onClick={onClose}
-      >
-        <li>Fale Comigo</li>
+
+      <Link to={"/gameplay"} onClick={onClose}>
+        <li>GAMEPLAY</li>
+      </Link>
+      <Link to={"/buyAcces"} onClick={onClose}>
+        <li>BUYACCESS</li>
       </Link>
     </S.ContainerLinks>
   );

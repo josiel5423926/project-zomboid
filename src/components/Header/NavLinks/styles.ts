@@ -7,6 +7,8 @@ export const ContainerLinks = styled.ul`
   width: 100%;
   justify-content: space-around;
   align-items: center;
+  color: #ffff;
+  font-weight: 600;
   @media (max-width: 668px) {
     display: flex;
     margin: 0;
@@ -20,7 +22,7 @@ export const ContainerLinks = styled.ul`
     a {
       margin: 10px ;
       list-style: none;
-      color: ${(props) => props.theme["gray-100"]};
+      color: #ffff;
       text-decoration: none;
     }
   }
@@ -39,7 +41,7 @@ export const ContainerLinks = styled.ul`
 
     a {
       list-style: none;
-      color: ${(props) => props.theme["gray-100"]};
+      color: #ffff;
       text-decoration: none;
     }
   }
@@ -47,14 +49,14 @@ export const ContainerLinks = styled.ul`
     font-size: 25px;
     li > a {
       list-style: none;
-      color: ${(props) => props.theme["gray-100"]};
+      color: #ffff;
     }
     a:hover {
       background: linear-gradient(87.25deg, #ffff 0.34%, #c4c4cc 109.42%);
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-family: Montserrat !important;
-      font-weight: 800;
+      //font-family: Montserrat !important;
+      font-weight: 600;
       border-bottom: 1px solid white;
       text-decoration: underline;
 
