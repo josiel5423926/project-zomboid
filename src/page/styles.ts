@@ -44,7 +44,7 @@ width: 100%;
 height: 100%;
 padding: 5px auto;
 margin: 10px;
-background-color: rgba(50, 50, 56, 0.6); 
+background-color: rgba(0, 0, 0, 0.4);//rgba(50, 50, 56, 0.6); 
   
 justify-content: center;
 align-items: center;

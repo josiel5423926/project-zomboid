@@ -14,6 +14,11 @@ export const Login = () => {
         
       </S.BoxForm>
    </S.ContainerBox>
+    <S.DivDiscord>
+      <img  src="../../../public/discordia.svg"  alt="DISCORD" className="discord-svg"/>
+      <p>DISCORD SERVER</p>
+      <span>TERMS OFUSE PRIVATE</span>
+    </S.DivDiscord>
     </S.Container> 
   );
 };
